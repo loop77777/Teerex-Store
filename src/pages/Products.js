@@ -222,7 +222,7 @@ const Products = ({ products, searchResults, filteredProducts }) => {
             open={drawerOpen}
             onClose={toggleDrawer}
           >
-            <IconButton onClick={toggleDrawer}>
+            <IconButton onClick={toggleDrawer} color="primary">
               <ChevronRightIcon />
             </IconButton>
             <Divider />
