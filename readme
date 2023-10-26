@@ -1,0 +1,39 @@
+## Getting Started
+### Prerequisites
+- react
+- mui
+- mui-icons
+- react-dom
+- redux - we are using redux just because we want to use multiple filters at the same time, and redux is the best way to do it, also it is a good practice to use redux for state management
+- react-redux - for react bindings, also now redux is giving sequentially sorted list according to the id of products, so no need to sort it manually
+
+### theme - light
+--text: #0d1614;
+--background: #fcfdfd;
+--primary: #804d58;
+--secondary: #eae0dc;
+--accent: #9c5e8d;
+
+## Components
+### header
+### product card
+### item filter
+### filter drawer
+### footer
+
+
+## pages
+### product page
+### cart page
+
+
+## How to run
+### `npm install`
+### `npm start`
+
+## How to build
+### `npm run build`
+
+## How to run with build.sh
+### `chmod +x build.sh`
+### `./build.sh`

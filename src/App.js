@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { Provider } from "react-redux";
+import { Route, Routes } from "react-router-dom";
+import Products from "./pages/Products";
+import store from "./store";
+import Cart from "./pages/Cart";
+
+export const API_URL =
+  "https://geektrust.s3.ap-southeast-1.amazonaws.com/coding-problems/shopping-cart/catalogue.json";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+      <div className="App">
+        <Routes>
+          <Route exact path="/" Component={Products} />
+          <Route exact path="/cart" Component={Cart} />
+        </Routes>
+      </div>
+    </Provider>
   );
 }
 
